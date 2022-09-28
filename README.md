@@ -9,5 +9,5 @@
 - [LWC OSS](https://lwc.dev/guide/install#lwc-open-source)
 
 <p align="center">
-<span><img src="https://user-images.githubusercontent.com/22826414/192671395-410d6458-52f6-4b81-b0b2-027be53c502b.png" height="750" style="border-radius: 50% !important;"></img></span>
+<span><img src="https://user-images.githubusercontent.com/22826414/192671395-410d6458-52f6-4b81-b0b2-027be53c502b.png" height="750" width="750"/></span>
 </p>
