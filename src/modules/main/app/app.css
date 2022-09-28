@@ -1,0 +1,50 @@
+.slds-carousel__panel {
+  background: white;
+  border-radius: var(
+    --slds-c-card-radius-border,
+    var(--sds-c-card-radius-border, 0.25rem)
+  );
+}
+
+.center {
+  text-align: center;
+  margin: 20px;
+}
+
+.image-container {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+.personal-image {
+  max-width: none !important;
+  max-height: none !important;
+  z-index: -1;
+  width: 85%;
+  pointer-events: none;
+}
+
+.portfolioCard {
+  max-width: 65%;
+  margin: auto;
+  z-index: 1;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+  .portfolioCard {
+    max-width: 550px;
+  }
+  .personal-image {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 875px) {
+  .personal-image {
+    display: none;
+  }
+}

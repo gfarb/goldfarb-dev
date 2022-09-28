@@ -1,0 +1,39 @@
+{
+  "cacheDir": "$rootDir/__lwr_cache__",
+  "lwc": {
+    "modules": [
+      {
+        "dir": "$rootDir/src/modules"
+      },
+      {
+        "npm": "lightning-base-components"
+      }
+    ]
+  },
+  "bundleConfig": {
+    "exclude": ["lwc", "@lwc/synthetic-shadow", "lwr/navigation"]
+  },
+  "assets": [
+    {
+      "alias": "assetsDir",
+      "dir": "$rootDir/src/assets",
+      "urlPath": "/assets"
+    },
+    {
+      "alias": "layoutsDir",
+      "dir": "$rootDir/src/layouts",
+      "urlPath": "/layouts"
+    }
+  ],
+  "routes": [
+    {
+      "id": "main",
+      "path": "/",
+      "rootComponent": "main/app",
+      "layoutTemplate": "$layoutsDir/index.html",
+      "bootstrap": {
+        "syntheticShadow": true
+      }
+    }
+  ]
+}

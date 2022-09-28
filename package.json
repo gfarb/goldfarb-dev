@@ -1,0 +1,44 @@
+{
+  "name": "goldfarb-dev",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "npm run lint:lwc",
+    "lint:lwc": "eslint src/modules",
+    "build": "lwr build --mode prod-compat",
+    "dev": "lwr serve",
+    "start": "WARMUP=true lwr serve --mode prod-compat",
+    "start:compat": "lwr serve --mode compat",
+    "start:prod-compat": "lwr serve --mode prod-compat",
+    "compress-images": "npx imagemin src/assets/original_images --out-dir=src/assets/images",
+    "clean": "scripts/clean-project",
+    "deploy": "scripts/build-and-deploy"
+  },
+  "dependencies": {
+    "lightning-base-components": "^1.14.7-alpha",
+    "lwc": "^2.23.6",
+    "lwr": "^0.7.6",
+    "@salesforce-ux/design-system": "^2.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "@lwc/eslint-plugin-lwc": "^1.5.0",
+    "@salesforce/eslint-config-lwc": "^3.3.3",
+    "@salesforce/eslint-plugin-lightning": "^1.0.0",
+    "babel-eslint": "^10.1.0",
+    "cpx": "^1.5.0",
+    "eslint": "^8.24.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.0.4",
+    "imagemin-cli": "^7.0.0",
+    "jest": "^29.0.3",
+    "prettier": "2.7.1",
+    "prettier-plugin-apex": "1.10.0"
+  },
+  "engines": {
+    "node": ">=14.15.4 <19"
+  }
+}

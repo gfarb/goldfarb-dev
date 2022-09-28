@@ -1,0 +1,437 @@
+<template>
+  <div class="main">
+    <div
+      if:true={display}
+      class="slds-grid slds-grid_vertical slds-grid_align-center slds-p-around_large portfolioCard"
+    >
+      <div>
+        <div
+          class="slds-col slds-size_1-of-1"
+          style="max-width: 1500px; margin: auto"
+        >
+          <div>
+            <lightning-card title="Max Goldfarb">
+              <div
+                class="slds-float_left"
+                style="
+                  top: 0;
+                  position: absolute;
+                  padding-top: 10px;
+                  padding-right: 10px;
+                  padding-left: 5px;
+                "
+              >
+                <img src="/assets/images/wave.gif" style="height: 25px" />
+              </div>
+              <div
+                class="slds-float_right"
+                style="
+                  top: 0;
+                  position: absolute;
+                  right: 0;
+                  margin-top: 10px;
+                  margin-right: 10px;
+                "
+              >
+                <lightning-button
+                  class="slds-m-left_x-small"
+                  label="Contact Me"
+                  title="Contact Me"
+                  onclick={handleClick}
+                ></lightning-button>
+              </div>
+              <lightning-tabset>
+                <div class="slds-scrollable" style="height: 17.5rem">
+                  <lightning-tab label="About Me">
+                    <div
+                      class="slds-text-longform"
+                      style="padding: 15px; padding-top: 0px"
+                    >
+                      <ul>
+                        <li>Certified Salesforce Platform Developer I & II.</li>
+                        <li>
+                          <a
+                            href="https://reg.salesforce.com/flow/plus/dreamforce22/maincontentcatalog/page/Catalog/session/1656082526486001w1rz"
+                            target="_blank"
+                            >Dreamforce 20th Anniversary Speaker</a
+                          > (2022).
+                        </li>
+                        <li>2021 Salesforce Platform Champion.</li>
+                        <li>
+                          Helped Salesforce create the UX Designer Certification
+                          as a subject matter expert.
+                        </li>
+                        <li>
+                          <a
+                            href="https://gist.githubusercontent.com/gfarb/aeea5ea28116e13c79a339524e7ad08a/raw/4a1cec4947158ead06db93812479e793eaecdd6a/CertificateReport.jpg"
+                            target="_blank"
+                            >JavaScript Programming Certificate </a
+                          >
+                          from Cornell University Bowers College of Computing
+                          and Information Science.
+                        </li>
+                        <li>
+                          Acknowledged on
+                          <a
+                            href="https://access.redhat.com/articles/66234"
+                            target="_blank"
+                            > Red Hat’s 2020 Security Vulnerability Disclosure
+                            Hall of Fame</a
+                          >.
+                        </li>
+                        <li>
+                          Meat smoker, Parrothead, recreational bug bounty
+                          hunter, fisherman & craft beer enjoyer.
+                        </li>
+                      </ul>
+                    </div>
+                  </lightning-tab>
+                  <lightning-tab label="Work Experience">
+                    <div
+                      class="slds-text-longform"
+                      style="padding: 10px; padding-top: 0px"
+                    >
+                      <lightning-accordion
+                        class="example-accordion"
+                        active-section-name=""
+                        allow-multiple-sections-open
+                      >
+                        <lightning-accordion-section
+                          name="GitHub"
+                          label="GitHub (Remote)"
+                        >
+                          <div class="slds-grid slds-wrap">
+                            <main
+                              class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12"
+                            >
+                              <h3 class="slds-text-heading_small">
+                                Software Engineer III - Salesforce
+                              </h3>
+                            </main>
+                            <aside
+                              class="slds-col slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12"
+                            >
+                              <h3
+                                class="slds-text-heading_xsmall slds-float_right"
+                              >
+                                Sep 2022 - Present
+                              </h3>
+                            </aside>
+                          </div>
+                          <ul style="list-style: circle; padding-bottom: 10px">
+                            <li>
+                              Design & implement new features and custom scripts
+                              in Apex, JavaScript, TypeScript & Bash.
+                            </li>
+                            <li>
+                              Contribute to GitHub's custom CI/CD workflow built
+                              on GitHub Actions.
+                            </li>
+                            <li>
+                              Facilitate integrations that pertain to
+                              applications managed by the Business Systems team
+                              & other systems.
+                            </li>
+                            <li>
+                              Identify & resolve performance problems in
+                              GitHub's existing codebase.
+                            </li>
+                            <li>
+                              Establish & document best practices around Apex
+                              coding, CI/CD and Developer Experience.
+                            </li>
+                            <li>Remove performance bottlenecks.</li>
+                            <li>
+                              Collaborate with GitHub's internal business
+                              partners to understand needs & deliver scalable
+                              solutions.
+                            </li>
+                            <li>
+                              Assist with managing Salesforce releases &
+                              deployments on a scheduled basis.
+                            </li>
+                            <li>
+                              Architected and developed new provisioning
+                              automation on the GitHub platform and oversee
+                              entitlement management across all systems managed
+                              by the Business Systems team.
+                            </li>
+                            <li>
+                              Configured and implemented code formatter, linter
+                              and pre-commit hooks for all developers working in
+                              multiple repositories used by the Business Systems
+                              team.
+                            </li>
+                          </ul>
+                          <div class="slds-grid slds-wrap">
+                            <main
+                              class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12"
+                            >
+                              <h3 class="slds-text-heading_small">
+                                Software Engineer II - Salesforce
+                              </h3>
+                            </main>
+                            <aside
+                              class="slds-col slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12"
+                            >
+                              <h3
+                                class="slds-text-heading_xsmall slds-float_right"
+                              >
+                                June 2021 - Sep 2022
+                              </h3>
+                            </aside>
+                          </div>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section
+                          name="LogMeIn"
+                          label="LogMeIn (Boston, MA)"
+                        >
+                          <div class="slds-grid slds-wrap">
+                            <main
+                              class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12"
+                            >
+                              <h3 class="slds-text-heading_small">
+                                Salesforce Developer & Security Champion
+                              </h3>
+                            </main>
+                            <aside
+                              class="slds-col slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12"
+                            >
+                              <h3
+                                class="slds-text-heading_xsmall slds-float_right"
+                              >
+                                Apr 2020 - June 2021
+                              </h3>
+                            </aside>
+                          </div>
+                          <ul style="list-style: circle; padding-bottom: 10px">
+                            <li>
+                              Developed & maintained Apex, JavaScript, Lightning
+                              Components, web apps & other technologies.
+                            </li>
+                            <li>
+                              Built and customized solutions that supported
+                              business requirements & drove key business
+                              decisions.
+                            </li>
+                            <li>
+                              Developed, evaluated, installed, upgraded &
+                              optimized 3rd party Salesforce tools & custom
+                              integrations.
+                            </li>
+                            <li>
+                              Proactively identified & executed initiatives to
+                              simplify the administration of LogMeIn's user
+                              experience in their Salesforce instance.
+                            </li>
+                            <li>
+                              Provided application users & administrators with
+                              development support (frontend & backend).
+                            </li>
+                            <li>
+                              Resolved, logged & tracked identified system
+                              issues.
+                            </li>
+                            <li>
+                              Served as first point of contact for the Business
+                              Systems team for security related questions.
+                            </li>
+                            <li>
+                              Worked with the Business Applications team to
+                              practice the Security Development Lifecycle.
+                            </li>
+                            <li>
+                              Reviewed & reported on the Business Applications
+                              team's security related activities.
+                            </li>
+                            <li>
+                              Worked closely with other members of the
+                              Salesforce development team & across the Business
+                              Applications organization on technical solutions.
+                            </li>
+                            <li>
+                              Performed proactive system hygiene activities,
+                              ensuring clean user interface & system
+                              configuration.
+                            </li>
+                            <li>
+                              Evangelized new & existing Salesforce features &
+                              functionality while providing recommendations for
+                              process improvements.
+                            </li>
+                          </ul>
+                          <div class="slds-grid slds-wrap">
+                            <main
+                              class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12"
+                            >
+                              <h3 class="slds-text-heading_small">
+                                Business Systems Analyst
+                              </h3>
+                            </main>
+                            <aside
+                              class="slds-col slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12"
+                            >
+                              <h3
+                                class="slds-text-heading_xsmall slds-float_right"
+                              >
+                                Jul 2019 - Apr 2020
+                              </h3>
+                            </aside>
+                          </div>
+                          <ul style="list-style: circle">
+                            <li>
+                              Assisted members of the Salesforce development &
+                              Business Applications teams with designing,
+                              developing & maintaining applications, code,
+                              workflow rules, data validation, processes &
+                              flows.
+                            </li>
+                            <li>
+                              Worked closely with business leadership responding
+                              to & proactively identify challenges that were
+                              solvable with system &/or process improvements
+                              while leading discovery, delivery & communication
+                              of changes to the business.
+                            </li>
+                            <li>
+                              Educated & evangelized CRM best practices to
+                              internal constituents ensuring solutions delivered
+                              were best of breed for LogMeIn’s business model &
+                              culture.
+                            </li>
+                            <li>
+                              Prepared & maintained documentation for
+                              requirements, design, development & deployment,
+                              administration & learning/development teams
+                              ensuring effective change management & adoption.
+                            </li>
+                          </ul>
+                        </lightning-accordion-section>
+                        <lightning-accordion-section
+                          name="Zaelab"
+                          label="Zaelab (Westport, CT)"
+                        >
+                          <div class="slds-grid slds-wrap">
+                            <main
+                              class="slds-col slds-size--1-of-2 slds-medium-size--5-of-6 slds-large-size--8-of-12"
+                            >
+                              <h3 class="slds-text-heading_small">
+                                Salesforce Admin/Developer & Junior Business
+                                Analyst
+                              </h3>
+                            </main>
+                            <aside
+                              class="slds-col slds-size--1-of-2 slds-medium-size--1-of-6 slds-large-size--4-of-12"
+                            >
+                              <h3
+                                class="slds-text-heading_xsmall slds-float_right"
+                              >
+                                Feb 2017 - Jul 2019
+                              </h3>
+                            </aside>
+                          </div>
+                          <ul style="list-style: circle">
+                            <li>
+                              Configured Salesforce to be an efficient tool with
+                              accurate data to support Finance & Operations,
+                              Delivery, & Sales/Marketing teams & proactively
+                              implemented solutions increasing its usability &
+                              reliability.
+                            </li>
+                            <li>
+                              Responded to ad hoc requests & managed the backlog
+                              of user stories & bugs related to Salesforce in
+                              Jira.
+                            </li>
+                            <li>
+                              Gathered business requirements using client
+                              interviews, analysis of documentation, workshops,
+                              & business process analysis to define stories,
+                              project scope & objectives guaranteeing technical
+                              feasibility for SAP Hybris projects.
+                            </li>
+                            <li>
+                              Maintained Web environments by performing system
+                              monitoring, analysis & troubleshooting.
+                            </li>
+                          </ul>
+                        </lightning-accordion-section>
+                      </lightning-accordion>
+                    </div>
+                  </lightning-tab>
+                  <lightning-tab label="Education">
+                    <div class="slds-text-longform" style="padding: 15px">
+                      <h3 class="slds-text-heading_xsmall">
+                        <span class="slds-text-heading_small"
+                          >Quinnipiac University</span
+                        >
+                        <span class="slds-float_right"
+                          >Aug 2014 - May 2018</span
+                        >
+                      </h3>
+                      <ul>
+                        <li>
+                          Bachelor of Science in Computer Information Systems.
+                        </li>
+                        <li>
+                          Computer Information Systems Capstone Project Manager.
+                        </li>
+                        <ul>
+                          <li>
+                            Featured in the Quinnipiac Chronicle: <a href="https://quchronicle.com/63149/news/students-display-i-t-for-good-in-capstone-showcase/" target="_blank">"Students display 'I.T. for Good' in capstone showcase"</a>
+                          </li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </lightning-tab>
+                </div>
+              </lightning-tabset>
+            </lightning-card>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slds-col slds-size_1-of-1"
+        style="max-width: 1500px; margin: auto; padding-top: 2rem"
+      ></div>
+      <div class="center">
+        <lightning-carousel scroll-duration="2">
+          <lightning-carousel-image
+            src="/assets/images/linkedin.png"
+            header="Max's LinkedIn Profile"
+            description="Max's LinkedIn profile provides a holistic view of his educational and vocational experience."
+            alternative-text="Max's LinkedIn profile provides a holistic view of his educational and vocational experience."
+            href="https://www.linkedin.com/in/mhgoldfarb"
+          >
+          </lightning-carousel-image>
+          <lightning-carousel-image
+            src="/assets/images/github.png"
+            header="Max's GitHub Profile"
+            description="Max's GitHub profile hosts open-source code and projects that he has published or contributed to."
+            alternative-text="Max's GitHub profile hosts open-source code and projects that he has published or contributed to."
+            href="https://github.com/gfarb"
+          >
+          </lightning-carousel-image>
+          <lightning-carousel-image
+            src="/assets/images/trailhead.png"
+            header="Max's Trailblazer Profile"
+            description="Max's Trailblazer profile portrays his skills, certifications and other achievements in the Salesforce ecosystem."
+            alternative-text="Max's Trailblazer profile portrays his skills, certifications and other achievements in the Salesforce ecosystem."
+            href="https://trailblazer.me/id/goldfarb"
+          >
+          </lightning-carousel-image>
+        </lightning-carousel>
+      </div>
+    </div>
+  </div>
+  <span class="image-container">
+    <img
+      class="personal-image"
+      src="/assets/images/max.png"
+      alt="Max Goldfarb"
+    />
+  </span>
+  <div>
+    <custom-modal oncallbacktoparent={toggleDisplay}></custom-modal>
+  </div>
+</template>

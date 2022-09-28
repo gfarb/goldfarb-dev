@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -rf __lwr_cache__
+rm -rf __generated_site__
+rm -rf node_modules
+rm package-lock.json
+npm install

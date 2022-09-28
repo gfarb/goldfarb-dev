@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo Enter commit message:
+read commitMessage
+
+rm -rf __lwr_cache__
+rm -rf __generated_site__
+npm run build
+if [[ $? != 0 ]]
+then
+    echo "Build failed, please fix the error above and re-run scripts/build-and-deploy"
+    exit
+fi
+git add . && git commit -m "$commitMessage"
+git push
