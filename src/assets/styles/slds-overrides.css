@@ -22,6 +22,14 @@ body {
   height: 150px;
 }
 
+.slds-carousel__panel {
+  background: white;
+  border-radius: var(
+    --slds-c-card-radius-border,
+    var(--sds-c-card-radius-border, 0.25rem)
+  );
+}
+
 .container {
   height: 100%;
   display: flex;
