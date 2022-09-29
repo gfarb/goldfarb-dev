@@ -13,6 +13,12 @@
   "bundleConfig": {
     "exclude": ["lwc", "@lwc/synthetic-shadow", "lwr/navigation"]
   },
+  "moduleProviders": [
+    "@lwrjs/label-module-provider",
+    "@lwrjs/app-service/moduleProvider",
+    "@lwrjs/lwc-module-provider",
+    "@lwrjs/npm-module-provider"
+  ],
   "assets": [
     {
       "alias": "assetsDir",
