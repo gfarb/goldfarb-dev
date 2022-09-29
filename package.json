@@ -12,7 +12,7 @@
     "start": "WARMUP=true lwr serve --mode prod-compat",
     "start:compat": "lwr serve --mode compat",
     "start:prod-compat": "lwr serve --mode prod-compat",
-    "start:static": "lwr serve __generated_site__",
+    "start:static": "WARMUP=true lwr serve __generated_site__",
     "compress-images": "npx imagemin src/assets/original_images --out-dir=src/assets/images",
     "clean": "scripts/clean-project",
     "deploy": "scripts/build-and-deploy"

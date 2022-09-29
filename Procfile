@@ -1,1 +1,1 @@
-web: npm run start:static
+web: WARMUP=true npm run start:static
