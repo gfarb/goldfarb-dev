@@ -21,7 +21,6 @@
     "lwr": "^0.7.6"
   },
   "devDependencies": {
-    "@lwrjs/label-module-provider": "^0.7.6",
     "@salesforce-ux/design-system": "^2.19.0",
     "lightning-base-components": "^1.14.7-alpha",
     "lwc": "^2.23.6",
