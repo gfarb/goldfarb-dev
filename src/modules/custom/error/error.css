@@ -1,0 +1,12 @@
+.center {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .portfolioCard {
+    max-width: 65%;
+    margin: auto;
+    z-index: 1;
+    overflow: auto;
+    overflow-x: hidden;
+  }
