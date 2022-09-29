@@ -18,11 +18,11 @@
     "deploy": "scripts/build-and-deploy"
   },
   "dependencies": {
+    "lightning-base-components": "^1.14.7-alpha",
     "lwr": "^0.7.6"
   },
   "devDependencies": {
     "@salesforce-ux/design-system": "^2.19.0",
-    "lightning-base-components": "^1.14.7-alpha",
     "lwc": "^2.23.6",
     "@babel/core": "^7.19.1",
     "@babel/eslint-parser": "^7.19.1",
