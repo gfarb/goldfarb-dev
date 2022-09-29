@@ -38,22 +38,22 @@
   ],
   "errorRoutes": [
     {
-        "id": "not_found",
-        "status": 404,
-        "layoutTemplate": "$layoutsDir/error-template.html",
-        "rootComponent": "custom/error",
-        "bootstrap": {
-          "syntheticShadow": true
-        }
+      "id": "not_found",
+      "status": 404,
+      "layoutTemplate": "$layoutsDir/error-template.html",
+      "rootComponent": "custom/error",
+      "bootstrap": {
+        "syntheticShadow": true
+      }
     },
     {
-        "id": "server_error",
-        "status": 500,
-        "layoutTemplate": "$layoutsDir/error-template.html",
-        "rootComponent": "custom/error",
-        "bootstrap": {
-          "syntheticShadow": true
-        }
+      "id": "server_error",
+      "status": 500,
+      "layoutTemplate": "$layoutsDir/error-template.html",
+      "rootComponent": "custom/error",
+      "bootstrap": {
+        "syntheticShadow": true
+      }
     }
-]
+  ]
 }

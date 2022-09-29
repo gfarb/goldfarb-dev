@@ -1,5 +1,3 @@
 import { LightningElement } from "lwc";
 
-export default class ErrorApp extends LightningElement {
-  
-}
+export default class ErrorApp extends LightningElement {}
