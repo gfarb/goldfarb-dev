@@ -40,7 +40,7 @@
     {
       "id": "not_found",
       "status": 404,
-      "layoutTemplate": "$layoutsDir/error-template.html",
+      "layoutTemplate": "$layoutsDir/index.html",
       "rootComponent": "custom/error",
       "bootstrap": {
         "syntheticShadow": true
@@ -49,7 +49,7 @@
     {
       "id": "server_error",
       "status": 500,
-      "layoutTemplate": "$layoutsDir/error-template.html",
+      "layoutTemplate": "$layoutsDir/index.html",
       "rootComponent": "custom/error",
       "bootstrap": {
         "syntheticShadow": true
