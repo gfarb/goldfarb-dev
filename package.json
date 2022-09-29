@@ -12,17 +12,19 @@
     "start": "WARMUP=true lwr serve --mode prod-compat",
     "start:compat": "lwr serve --mode compat",
     "start:prod-compat": "lwr serve --mode prod-compat",
+    "start:static": "lwr serve __generated_site__",
     "compress-images": "npx imagemin src/assets/original_images --out-dir=src/assets/images",
     "clean": "scripts/clean-project",
     "deploy": "scripts/build-and-deploy"
   },
   "dependencies": {
-    "lightning-base-components": "^1.14.7-alpha",
-    "lwc": "^2.23.6",
-    "lwr": "^0.7.6",
-    "@salesforce-ux/design-system": "^2.19.0"
+    "lwr": "^0.7.6"
   },
   "devDependencies": {
+    "@lwrjs/label-module-provider": "^0.7.6",
+    "@salesforce-ux/design-system": "^2.19.0",
+    "lightning-base-components": "^1.14.7-alpha",
+    "lwc": "^2.23.6",
     "@babel/core": "^7.19.1",
     "@babel/eslint-parser": "^7.19.1",
     "@lwc/eslint-plugin-lwc": "^1.5.0",

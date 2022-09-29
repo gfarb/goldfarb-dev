@@ -1,0 +1,128 @@
+/*
+Dark Green: #1f432b
+Light Green: #52a34e
+*/
+
+html {
+  background-image: url("/assets/images/background.webp");
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+body {
+  margin: unset;
+}
+
+.slds-card {
+  margin: 20px;
+}
+
+.slds-carousel__image > img {
+  width: auto;
+  height: 150px;
+}
+
+.slds-carousel__panel {
+  background: white;
+  border-radius: var(
+    --slds-c-card-radius-border,
+    var(--sds-c-card-radius-border, 0.25rem)
+  );
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.slds-card__header {
+  margin-left: 25px;
+}
+
+.slds-carousel__stage {
+  border-radius: var(--slds-c-card-radius-border,var(--sds-c-card-radius-border,.25rem));
+}
+
+.slds-carousel__indicator-action.slds-is-active,
+.slds-carousel__indicator-action.slds-is-active:hover {
+  background: #52a34e;
+  background-color: #52a34e;
+}
+
+.slds-carousel__indicator-action.slds-is-active, .slds-carousel__indicator-action.slds-is-active:hover {
+  background: #52a34e;
+  border-color: #52a34e;
+}
+
+.slds-carousel__indicator-action:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px #52a34e;
+  box-shadow: 0 0 3px #52a34e;
+  background-color: #52a34e;
+  border-color: #52a34e;
+  outline: 0;
+}
+
+.slds-carousel__indicator-action:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px #52a34e;
+  box-shadow: 0 0 3px #52a34e;
+  background-color: #52a34e;
+  border-color: #52a34e;
+  outline: 0;
+}
+
+a {
+  color: #52a34e;
+}
+
+.slds-button {
+  color: #52a34e;
+}
+
+.slds-button_brand {
+  background-color: #52a34e;
+  color: white;
+}
+
+.slds-button--brand:active, .slds-button_brand:active {
+  --slds-c-button-color-background-active: var(--slds-c-button-brand-color-background-active, var(--sds-c-button-brand-color-background-active, #1f432b));
+  --slds-c-button-color-border-active: var(--sds-c-button-brand-color-border-active, var(--sds-c-button-brand-color-border-active, #52a34e));
+  --slds-c-button-text-color-active: var(--slds-c-button-brand-text-color-active, var(--sds-c-button-brand-text-color-active, white));
+}
+
+div.slds-accordion__summary > h3 > button {
+  color: #181818;
+}
+
+.slds-tabs_default__item.slds-active:after,
+.slds-tabs_default__item.slds-is-active:after,
+.slds-tabs--default__item.slds-active:after,
+.slds-tabs--default__item.slds-is-active:after {
+  background-color: var(
+    --slds-c-tabs-item-color-border-active,
+    var(--sds-c-tabs-item-color-border-active, #52a34e)
+  );
+}
+
+.slds-tabs_default__item:hover:after,
+.slds-tabs--default__item:hover:after {
+  background-color: var(
+    --slds-c-tabs-item-color-border-active,
+    var(--sds-c-tabs-item-color-border-active, #52a34e)
+  );
+}
+
+.slds-button:focus,
+.slds-button:hover {
+  --slds-c-button-color-border: var(--slds-c-button-color-border-hover);
+  --slds-c-button-color-background: var(--slds-c-button-color-background-hover);
+  color: var(
+    --slds-c-button-text-color-hover,
+    var(--sds-c-button-text-color-hover, #52a34e)
+  );
+}
